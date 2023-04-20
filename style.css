@@ -1,0 +1,37 @@
+body{
+    background-color:#fefff3;
+}
+
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction:column;
+}
+
+.container img{
+    width:450px;
+    height:200px;
+}
+
+.intro{
+    text-align: justify;
+    max-width:800px;
+}
+
+footer{
+    background-color:#3b3a40;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction:column;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+}
+footer p{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction:row;
+}
