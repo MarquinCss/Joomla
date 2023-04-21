@@ -10,6 +10,14 @@ align-items: center;
 flex-direction:column;
 }
 
+.container2{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction:column;
+text-align:center;
+}
+
 .container img{
     width:450px;
     height:200px;
@@ -96,17 +104,14 @@ span{
 color:red;
 }
 
-.cardss{
+.imagem{
+	width:300px;
+	height:300px;
 	display:flex;
 	justify-content:center;
 	align-items:center;
 }
 
-.imagem{
-	display:flex;
-	justify-content:center;
-	align-items:center;
-}
 
 h1{
 	font-size:65px;
