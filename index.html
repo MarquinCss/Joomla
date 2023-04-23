@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+ <link rel="shortcut icon" href="https://nti.ufabc.edu.br/images/tutoriais/joomla/joomla.png" type="image/x-icon">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +13,7 @@
 </head>
 <body>
     <div class="container">
-    <img src="logo.png" alt="Logo da empressa Joomla.">
+    <img align="left" src="logo.png" alt="Logo da empressa Joomla."> <button class="modebtn" id="toggle-mode"><i class="fa fa-sun-o" aria-hidden="true"></i></button> </img>
               
     <p class="intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta culpa in corporis sint maiores, ipsum sunt atque magnam dolore labore a sit! Nemo quo consectetur quis totam, ipsa consequuntur Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium eius quos facere ducimus distinctio iste voluptatum sit hic dolorem, totam nam reprehenderit. Dolore autem dolor saepe iste facilis, praesentium soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima porro eius, quis saepe obcaecati pariatur expedita illum, aperiam corrupti esse voluptatem doloremque.</p>
 <br>
@@ -21,7 +25,7 @@
 <!--Características-->
       <details>
             <summary>Características</summary>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis neque quod dolorum enim quam esse facilis vel impedit earum. Illo porro labore unde ea vero maiores iusto fugit quod consequatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, in! Totam obcaecati maxime rem, reiciendis eligendi blanditiis aut suscipit amet beatae iure illo itaque ratione provident commodi pariatur, ipsa possimus.</p>
+            <p>Reunimos algumas características do Joomla, em nossas pesquisas:</p>
           </details>
 <!--Para que serve-->
 <details>
@@ -62,7 +66,7 @@
 </ul>	
 </div>
 </div>
-  Fonte retiradas dos websites <Br> <a href="https://www.hostgator.com.br/blog/o-que-e-joomla/"><span>Hostigator</span></a> e <a href="https://paginapropria.com.br/12-pros-e-contras-do-joomla/"><span>Página Própia</span></a>
+  Fontes retiradas dos websites <Br> <a href="https://www.hostgator.com.br/blog/o-que-e-joomla/"><span>Hostigator</span></a> e <a href="https://paginapropria.com.br/12-pros-e-contras-do-joomla/"><span>Página Própia</span></a>
 			
 				
 				
@@ -88,18 +92,29 @@
 				<p>E além disso, outros...</p>
 				<p>Fonte retirada do própio website oficial da <a href="https://magazine.joomla.org/all-issues/july-2012/10-most-popular-websites-using-joomla"><span>Joomla</span></a>,tem fonte melhor que isso? </p>
               </details>
-			  
+			  <br><br>
 			  <h2>Considerações finais</h2>
 			  <p class="fim">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta culpa in corporis sint maiores, ipsum sunt atque magnam dolore labore a sit! Nemo quo consectetur quis totam, ipsa consequuntur Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium eius quos facere ducimus distinctio iste voluptatum sit hic dolorem, totam nam reprehenderit. Dolore autem dolor saepe iste facilis, praesentium soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima porro eius, quis saepe obcaecati pariatur expedita illum, aperiam corrupti esse voluptatem doloremque.</p>
 
 <footer>
     <div class="cont">
-    <p class="footer-conteudo"><a href="index.html">Página Inicial</a> <a href="contato.html">Redes</a> <a href="https://www.joomla.org/">Joomla! Oficial</a></a> <br></div>
+    <p class="footer-conteudo"><a class="f-c"  href="index.html">Página Inicial</a> <a class="f-c"  href="contato.html">Redes</a> <a class="f-c"  href="https://www.joomla.org/">Joomla! Oficial</a></a> <br></div>
   &#169; 2023 Evelyn Eggres e Marco Marchi <br>
   Todos os direitos reservados.
 
 </footer>
 </div>
+ <script>
+        const toggleBtn = document.getElementById ("toggle-mode");
+const body = document.body
 
+toggleBtn.addEventListener('click', function () { 
+   
+   body.classList.toggle('dark-mode')
+} )
+</script>
 </body>
+<script>
+    AOS.init();
+  </script>
 </html>

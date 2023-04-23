@@ -43,11 +43,6 @@ details{
 	transition: all 0.3s ease;
 }
 
-details[open]{
-  background-color: lightblue;
-
-}
-
 .cards{
 	display:flex;
 	flex-direction:row;
@@ -111,6 +106,7 @@ color:red;
 	justify-content:center;
 	align-items:center;
 	transition:2s;
+	border-radius:50px;
 }
 
 .foto:hover{
@@ -126,6 +122,7 @@ h1{
 	font-size:65px;
 }
 
+
 footer{
     background-color:#3b3a40;
     display:flex;
@@ -138,6 +135,25 @@ footer{
 	font-size:24px;
 	text-align:center;
 }
+.redess{
+font-size:30px;
+display:flex;
+flex-direction:row;
+justify-content:center;
+align-items:center;
+gap:30px;
+
+}
+
+.rede{
+	transition:2s;
+}
+
+.redess .rede:hover{
+color:gray;
+
+}
+
 footer p{
     display:flex;
     justify-content:center;
@@ -145,4 +161,36 @@ footer p{
     flex-direction:row;
 	gap:50px;
 	font-size:20px;
+}
+
+/*dark mode*/
+.modebtn{
+ width:30px;
+height:30px; 
+border-radius:50px;
+}
+
+
+.dark-mode {
+		background-color:#363636;
+		color:#fff;
+}
+.dark-mode .modebtn{
+	color:#000;
+}
+.dark-mode i{
+	color:#fff;
+}
+
+.dark-mode .f-c{
+	color:#fff;
+}
+
+.dark-mode .f-c:hover{
+	color:#555;
+}
+
+.dark-mode footer{
+	background-color:#1C1C1C;
+	color:#fff;
 }
