@@ -11,6 +11,7 @@ flex-direction:column;
 }
 
 .container2{
+	margin-top:30px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -37,7 +38,7 @@ summary {
 
 details{
 	margin-top:30px;
-	text-align:center;
+	text-align:justify;
 	max-width:550px;
 	font-size:30px;
 	transition: all 0.3s ease;
@@ -51,7 +52,6 @@ gap:30px;
 
 .card{
 	
-	background-color:blue;
 	width:250px;
 	height:450px;
 	text-align:center;
@@ -145,6 +145,28 @@ gap:30px;
 
 }
 
+.inicial{
+background-color:#ff0000;
+width:150px;
+height:40px;
+border-radius:20px;
+position:absolute;
+top:5px;
+left:50px;	
+ box-shadow: 0.2em 0.2em;
+}
+
+.inicial:hover {
+  background: #942121;
+  text-decoration: none;
+}
+
+.inicial:Active{
+	  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+	
+}
+
 .rede{
 	transition:2s;
 }
@@ -165,9 +187,10 @@ footer p{
 
 /*dark mode*/
 .modebtn{
- width:30px;
+ width:70px;
 height:30px; 
 border-radius:50px;
+border:2.5px solid black;
 }
 
 
@@ -176,7 +199,8 @@ border-radius:50px;
 		color:#fff;
 }
 .dark-mode .modebtn{
-	color:#000;
+	background-color:black;
+	color:black;
 }
 .dark-mode i{
 	color:#fff;
@@ -194,3 +218,60 @@ border-radius:50px;
 	background-color:#1C1C1C;
 	color:#fff;
 }
+
+.dark-mode .inicial{
+	background-color:#2F4F4F;
+}
+
+.dark-mode .hover{
+	background-color:#233838;
+}
+
+/*responsividade*/
+@media only screen and (max-width: 620px) {
+  
+
+.intro{
+	font-size:15px;
+	padding-left:15px;
+	padding-right:15px;
+	
+}
+	
+.foto{
+width:200px;
+height:200px;
+}	
+	
+	.cardss{
+	display:flex;
+align-items:center;
+justify-content:center;
+	}
+	
+	
+.cards{
+display:flex;
+flex-direction:column;
+margin-top:20px;
+}
+.modebtn{
+	margin-top:30px;
+}
+
+footer p{
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+}
+
+details{
+	font-size:18px;
+	text-align:justify;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+}
+
+/*Por Evelyn Eggres e Marco Antônio*/
