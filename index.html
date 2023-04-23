@@ -12,6 +12,10 @@
     <title>Joomla</title>
 </head>
 <body>
+<div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+</div>
     <div class="container">
     <img align="left" class="imaglogo" src="logo.png" alt="Logo da empressa Joomla."> <button class="modebtn" id="toggle-mode"><i class="fa fa-sun-o" aria-hidden="true"></i></button> </img>
               
@@ -111,6 +115,7 @@
 </footer>
 </div>
  <script>
+ //Modo escuro
         const toggleBtn = document.getElementById ("toggle-mode");
 const body = document.body
 
@@ -118,6 +123,17 @@ toggleBtn.addEventListener('click', function () {
    
    body.classList.toggle('dark-mode')
 } )
+
+//barra de leitura (Créditos a W3schools)
+
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
 </script>
 </body>
 <script>

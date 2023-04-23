@@ -70,6 +70,22 @@ gap:30px;
   transform: scale(1.1);
 }
 
+.progress-container {
+  width: 100%;
+  height: 9px;
+  background-color:#fefff3;
+    position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.progress-bar {
+  height: 9px;
+  background:#FF1493;
+  width: 0%;
+}
+
 
 
 .cont{
@@ -194,6 +210,7 @@ border:2.5px solid black;
 }
 
 
+
 .dark-mode {
 		background-color:#363636;
 		color:#fff;
@@ -223,7 +240,11 @@ border:2.5px solid black;
 	background-color:#2F4F4F;
 }
 
-.dark-mode .hover{
+.dark-mode .progress-container{
+	background-color:#363636;
+}
+
+.dark-mode .progress-bar{
 	background-color:#233838;
 }
 
