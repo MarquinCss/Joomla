@@ -82,7 +82,7 @@ gap:30px;
 
 .progress-bar {
   height: 9px;
-  background:#20B2AA;
+  background:#FF00FF;
   width: 0%;
 }
 
@@ -245,7 +245,7 @@ border:2.5px solid black;
 }
 
 .dark-mode .progress-bar{
-	background-color:#233838;
+	background-color:#20B2AA;
 }
 
 /*responsividade*/
